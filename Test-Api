@@ -9,5 +9,5 @@ spring:
           routes:
             - id: test-api
                 uri: lb://TEST-API
-                   predicates:
+                   predicate:
                       -Path = /test
