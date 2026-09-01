@@ -7,7 +7,7 @@ spring:
       server:
         webflux:
           routes:
-            - id:demo_api
-                uri: lb://DEMO-API
+            - id: test-api
+                uri: lb://TEST-API
                    predicates:
                       -Path = /test
