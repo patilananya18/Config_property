@@ -1,0 +1,13 @@
+spring:
+  application:
+     name: 6_TestAPI
+
+ cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id:demo_api
+                uri: lb://DEMO-API
+                   predicates:
+                      -Path = /test
